@@ -30,9 +30,7 @@ struct HomeView: View {
     private var selectedPlace: Place? { places.first { $0.id == selectedID } }
 
     private var canSend: Bool {
-        selectedPlace != nil
-        && !reportText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-        && !isSending
+        selectedPlace != nil && !isSending   // la nota è facoltativa
     }
 
     var body: some View {
@@ -44,12 +42,12 @@ struct HomeView: View {
                 reportSection
                 if !store.reports.isEmpty { recentSection }
             }
-            .navigationTitle("Black Report")
+            .navigationTitle("Home")
             .scrollDismissesKeyboard(.interactively)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
-                    Button("Fine") { isReportFocused = false }
+                    Button("Done") { isReportFocused = false }
                 }
             }
             .onAppear { locationManager.request() }
@@ -73,19 +71,19 @@ struct HomeView: View {
             .frame(height: 240)
             .listRowInsets(EdgeInsets())
         } header: {
-            Text("Scegli sulla mappa")
+            Text("Choose on the map")
         } footer: {
-            Text("Sposta la mappa: il mirino cerca le attività più vicine. Oppure tocca un segnaposto.")
+            Text("Move the map: the crosshair finds the nearest businesses. Or tap a marker.")
         }
     }
 
     private var locationSection: some View {
-        Section("Attività selezionata") {
+        Section("Selected business") {
             if locationManager.isDenied && places.isEmpty {
-                Text("Permesso posizione negato. Puoi comunque usare la mappa, oppure abilitalo da Impostazioni › Privacy › Localizzazione.")
+                Text("Location permission denied. You can still use the map, or enable it in Settings › Privacy › Location Services.")
                     .foregroundStyle(.secondary)
             } else if isSearching {
-                HStack { ProgressView(); Text("Cerco le attività vicine…") }
+                HStack { ProgressView(); Text("Searching nearby businesses…") }
             } else if let place = selectedPlace {
                 VStack(alignment: .leading, spacing: 2) {
                     Label(place.name, systemImage: "mappin.circle.fill")
@@ -93,7 +91,7 @@ struct HomeView: View {
                         .font(.caption).foregroundStyle(.secondary)
                 }
             } else {
-                Text("Nessuna attività trovata qui. Sposta la mappa.")
+                Text("No business found here. Move the map.")
                     .foregroundStyle(.secondary)
             }
 
@@ -101,13 +99,13 @@ struct HomeView: View {
                 locationManager.request()
                 if let loc = locationManager.location { focusOn(loc.coordinate) }
             } label: {
-                Label("Torna alla mia posizione", systemImage: "location.fill")
+                Label("Back to my location", systemImage: "location.fill")
             }
         }
     }
 
     private var placesSection: some View {
-        Section("Attività vicine (max 10)") {
+        Section("Nearby businesses (max 10)") {
             ForEach(places) { place in
                 Button {
                     selectedID = place.id
@@ -115,7 +113,7 @@ struct HomeView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text(place.name).foregroundStyle(.primary)
-                            Text("\(Int(place.distance)) m · \(place.address)")
+                            Text(verbatim: "\(Int(place.distance)) m · \(place.address)")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
@@ -130,7 +128,7 @@ struct HomeView: View {
     }
 
     private var reportSection: some View {
-        Section("Nota") {
+        Section("Note (optional)") {
             TextEditor(text: $reportText)
                 .frame(minHeight: 100)
                 .focused($isReportFocused)
@@ -140,7 +138,7 @@ struct HomeView: View {
             } label: {
                 HStack {
                     Spacer()
-                    if isSending { ProgressView() } else { Text("Invia nota").bold() }
+                    if isSending { ProgressView() } else { Text("Send report").bold() }
                     Spacer()
                 }
             }
@@ -149,12 +147,14 @@ struct HomeView: View {
     }
 
     private var recentSection: some View {
-        Section("Ultimi report") {
+        Section("Recent reports") {
             ForEach(store.reports.prefix(5)) { report in
                 VStack(alignment: .leading, spacing: 2) {
                     Text(report.placeName).font(.headline)
-                    Text(report.text).font(.subheadline)
-                    Text(report.date.formatted(date: .abbreviated, time: .shortened))
+                    if !report.text.isEmpty {
+                        Text(report.text).font(.subheadline)
+                    }
+                    Text(report.date, format: .dateTime.day().month(.abbreviated).year().hour().minute())
                         .font(.caption).foregroundStyle(.secondary)
                 }
             }
