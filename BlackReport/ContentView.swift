@@ -5,20 +5,18 @@
 //  Created by bogdan.stanciu on 02/11/26.
 //
 
-import SwiftUI
 
+import SwiftUI
+ 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem { Label("Home", systemImage: "house.fill") }
+ 
+            ProfileView()
+                .tabItem { Label("Profilo", systemImage: "person.fill") }
         }
-        .padding()
     }
 }
-
-#Preview {
-    ContentView()
-}
+ 

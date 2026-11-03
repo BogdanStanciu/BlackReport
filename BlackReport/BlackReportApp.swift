@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BlackReportApp: App {
+    @StateObject private var store = ReportsStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(store)
         }
     }
 }
