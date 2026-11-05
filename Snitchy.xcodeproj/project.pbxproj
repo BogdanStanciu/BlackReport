@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AF547C6309907EF00D0CC49 /* Build configuration list for PBXProject "BlackReport" */;
+			buildConfigurationList = 9AF547C6309907EF00D0CC49 /* Build configuration list for PBXProject "Snitchy" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -524,7 +524,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AF547C6309907EF00D0CC49 /* Build configuration list for PBXProject "BlackReport" */ = {
+		9AF547C6309907EF00D0CC49 /* Build configuration list for PBXProject "Snitchy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AF547ED309907F100D0CC49 /* Debug */,

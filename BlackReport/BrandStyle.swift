@@ -12,7 +12,7 @@ extension Color {
 }
 
 enum Brand {
-    static let name = "Black Report"
+    static let name = "Snitchy"
 }
 
 extension View {
