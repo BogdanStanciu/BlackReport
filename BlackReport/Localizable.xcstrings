@@ -1,310 +1,316 @@
 {
-  "sourceLanguage": "en",
-  "version": "1.0",
-  "strings": {
-    "Home": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Back to my location" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back to my location"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Torna alla mia posizione"
           }
         }
       }
     },
-    "Profile": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Profile"
+    "Choose on the map" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose on the map"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Profilo"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli sulla mappa"
           }
         }
       }
     },
-    "Done": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Done"
+    "Details" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Details"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Fine"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dati"
           }
         }
       }
     },
-    "Choose on the map": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Choose on the map"
+    "Done" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Scegli sulla mappa"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
           }
         }
       }
     },
-    "Move the map: the crosshair finds the nearest businesses. Or tap a marker.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Move the map: the crosshair finds the nearest businesses. Or tap a marker."
+    "Home" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sposta la mappa: il mirino cerca le attività più vicine. Oppure tocca un segnaposto."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
           }
         }
       }
     },
-    "Selected business": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Selected business"
+    "Language" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Attività selezionata"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lingua"
           }
         }
       }
     },
-    "Location permission denied. You can still use the map, or enable it in Settings › Privacy › Location Services.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Location permission denied. You can still use the map, or enable it in Settings › Privacy › Location Services."
+    "Location permission denied. You can still use the map, or enable it in Settings › Privacy › Location Services." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Location permission denied. You can still use the map, or enable it in Settings › Privacy › Location Services."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Permesso posizione negato. Puoi comunque usare la mappa, oppure abilitalo da Impostazioni › Privacy › Localizzazione."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permesso posizione negato. Puoi comunque usare la mappa, oppure abilitalo da Impostazioni › Privacy › Localizzazione."
           }
         }
       }
     },
-    "Searching nearby businesses…": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Searching nearby businesses…"
+    "Move the map: the crosshair finds the nearest businesses. Or tap a marker." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move the map: the crosshair finds the nearest businesses. Or tap a marker."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cerco le attività vicine…"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sposta la mappa: il mirino cerca le attività più vicine. Oppure tocca un segnaposto."
           }
         }
       }
     },
-    "No business found here. Move the map.": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "No business found here. Move the map."
+    "Nearby businesses (max 5)" : {
+
+    },
+    "Nearby businesses (max 10)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nearby businesses (max 10)"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nessuna attività trovata qui. Sposta la mappa."
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attività vicine (max 10)"
           }
         }
       }
     },
-    "Back to my location": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Back to my location"
+    "No business found here. Move the map." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No business found here. Move the map."
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Torna alla mia posizione"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna attività trovata qui. Sposta la mappa."
           }
         }
       }
     },
-    "Nearby businesses (max 10)": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nearby businesses (max 10)"
+    "Note (optional)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note (optional)"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Attività vicine (max 10)"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota (facoltativa)"
           }
         }
       }
     },
-    "Note (optional)": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Note (optional)"
+    "Profile" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nota (facoltativa)"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profilo"
           }
         }
       }
     },
-    "Send report": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Send report"
+    "Recent reports" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recent reports"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Invia report"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ultimi report"
           }
         }
       }
     },
-    "Recent reports": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Recent reports"
+    "Reports sent" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reports sent"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ultimi report"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Report inviati"
           }
         }
       }
     },
-    "Details": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Details"
+    "Searching nearby businesses…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Searching nearby businesses…"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dati"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerco le attività vicine…"
           }
         }
       }
     },
-    "Your name": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your name"
+    "Selected business" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selected business"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Il tuo nome"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attività selezionata"
           }
         }
       }
     },
-    "Statistics": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Statistics"
+    "Send report" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send report"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Statistiche"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invia report"
           }
         }
       }
     },
-    "Reports sent": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reports sent"
+    "Statistics" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistics"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Report inviati"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Statistiche"
           }
         }
       }
     },
-    "Language": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Language"
+    "Your name" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your name"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lingua"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo nome"
           }
         }
       }
     }
-  }
+  },
+  "version" : "1.0"
 }

@@ -42,7 +42,8 @@ struct HomeView: View {
                 reportSection
                 if !store.reports.isEmpty { recentSection }
             }
-            .navigationTitle("Home")
+            .redHeaderSheet()
+            .redTopBar()
             .scrollDismissesKeyboard(.interactively)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
@@ -105,7 +106,7 @@ struct HomeView: View {
     }
 
     private var placesSection: some View {
-        Section("Nearby businesses (max 10)") {
+        Section("Nearby businesses (max 5)") {
             ForEach(places) { place in
                 Button {
                     selectedID = place.id
@@ -195,7 +196,7 @@ struct HomeView: View {
             let found = await PlaceFinder.nearby(
                 to: CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude),
                 radius: radius,
-                limit: 10
+                limit: 5
             )
             guard !Task.isCancelled else { return }
             places = found

@@ -23,7 +23,6 @@ enum AppLanguage: String, CaseIterable, Identifiable {
         }
     }
  
-    /// Lingua iniziale: italiano se il telefono è in italiano, altrimenti inglese.
     static var deviceDefault: AppLanguage {
         Locale.preferredLanguages.first?.hasPrefix("it") == true ? .italian : .english
     }

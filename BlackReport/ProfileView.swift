@@ -1,10 +1,3 @@
-//
-//  ProfileView.swift
-//  BlackReport
-//
-//  Created by bogdan.stanciu on 02/11/26.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
@@ -15,10 +8,6 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Details") {
-                    TextField("Your name", text: $name)
-                }
-
                 Section("Language") {
                     Picker("Language", selection: $languageCode) {
                         ForEach(AppLanguage.allCases) { language in
@@ -32,7 +21,8 @@ struct ProfileView: View {
                     LabeledContent("Reports sent", value: "\(store.reports.count)")
                 }
             }
-            .navigationTitle("Profile")
+            .redHeaderSheet()
+            .redTopBar()
         }
     }
 }
