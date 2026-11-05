@@ -4,7 +4,8 @@ struct ProfileView: View {
     @EnvironmentObject private var store: ReportsStore
     @AppStorage("profile_name") private var name = ""
     @AppStorage(AppLanguage.storageKey) private var languageCode = AppLanguage.deviceDefault.rawValue
-
+    @AppStorage(AppTheme.storageKey) private var themeCode = AppTheme.red;
+    
     var body: some View {
         NavigationStack {
             Form {
@@ -19,6 +20,10 @@ struct ProfileView: View {
 
                 Section("Statistics") {
                     LabeledContent("Reports sent", value: "\(store.reports.count)")
+                }
+                
+                Section("Theme"){
+                    ThemePickerView()
                 }
             }
             .redHeaderSheet()

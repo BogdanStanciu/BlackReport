@@ -17,6 +17,9 @@
         }
       }
     },
+    "Blue" : {
+
+    },
     "Choose on the map" : {
       "localizations" : {
         "en" : {
@@ -65,6 +68,12 @@
           }
         }
       }
+    },
+    "Graphite" : {
+
+    },
+    "Green" : {
+
     },
     "Home" : {
       "localizations" : {
@@ -182,6 +191,12 @@
         }
       }
     },
+    "Orange" : {
+
+    },
+    "Pink" : {
+
+    },
     "Profile" : {
       "localizations" : {
         "en" : {
@@ -198,6 +213,9 @@
         }
       }
     },
+    "Purple" : {
+
+    },
     "Recent reports" : {
       "localizations" : {
         "en" : {
@@ -213,6 +231,9 @@
           }
         }
       }
+    },
+    "Red" : {
+
     },
     "Reports sent" : {
       "localizations" : {
@@ -293,6 +314,12 @@
           }
         }
       }
+    },
+    "Teal" : {
+
+    },
+    "Theme" : {
+
     },
     "Your name" : {
       "extractionState" : "stale",
