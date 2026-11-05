@@ -9,6 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage(AppTheme.storageKey) private var themeCode = AppTheme.red.rawValue
+
+    private var currentTheme: AppTheme { AppTheme.from(themeCode) }
+
     var body: some View {
         TabView {
             HomeView()
@@ -17,6 +21,6 @@ struct ContentView: View {
             ProfileView()
                 .tabItem { Label("Profile", systemImage: "person.fill") }
         }
-        .tint(Color.brandRed)
+        .tint(currentTheme.color)
     }
 }

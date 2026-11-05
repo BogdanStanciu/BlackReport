@@ -16,10 +16,10 @@ enum Brand {
 }
 
 extension View {
-    func redTopBar() -> some View {
+    func themedTopBar(theme: AppTheme) -> some View {
            self
                .navigationBarTitleDisplayMode(.inline)
-               .toolbarBackground(Color.brandRed, for: .navigationBar)
+               .toolbarBackground(theme.color, for: .navigationBar)
                .toolbarBackground(.visible, for: .navigationBar)
                .toolbarColorScheme(.dark, for: .navigationBar)
                .toolbar {
@@ -32,8 +32,8 @@ extension View {
                }
        }
     
-    func redHeaderSheet(cornerRadius: CGFloat = 28) -> some View {
+    func themedHeaderSheet(theme: AppTheme, cornerRadius: CGFloat = 28) -> some View {
         self.clipShape(UnevenRoundedRectangle(topLeadingRadius: cornerRadius, topTrailingRadius: cornerRadius))
-            .background(alignment: .top) {Color.brandRed.frame(height: cornerRadius + 12)}
+            .background(alignment: .top) {theme.color.frame(height: cornerRadius + 12)}
     }
 }

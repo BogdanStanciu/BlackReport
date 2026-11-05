@@ -11,6 +11,7 @@ import MapKit
 struct HomeView: View {
     @EnvironmentObject private var store: ReportsStore
     @StateObject private var locationManager = LocationManager()
+    @AppStorage(AppTheme.storageKey) private var themeCode = AppTheme.red.rawValue
 
     @State private var places: [Place] = []
     @State private var selectedID: UUID?
@@ -23,6 +24,8 @@ struct HomeView: View {
     @State private var didSkipInitialCameraEvent = false
     @State private var searchTask: Task<Void, Never>?
     @FocusState private var isReportFocused: Bool
+
+    private var currentTheme: AppTheme { AppTheme.from(themeCode) }
 
     private let gpsRadius: CLLocationDistance = 150   // ricerca dal GPS
     private let pinRadius: CLLocationDistance = 100   // ricerca dal mirino
@@ -42,8 +45,8 @@ struct HomeView: View {
                 reportSection
                 if !store.reports.isEmpty { recentSection }
             }
-            .redHeaderSheet()
-            .redTopBar()
+            .themedHeaderSheet(theme: currentTheme)
+            .themedTopBar(theme: currentTheme)
             .scrollDismissesKeyboard(.interactively)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {

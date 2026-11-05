@@ -4,7 +4,9 @@ struct ProfileView: View {
     @EnvironmentObject private var store: ReportsStore
     @AppStorage("profile_name") private var name = ""
     @AppStorage(AppLanguage.storageKey) private var languageCode = AppLanguage.deviceDefault.rawValue
-    @AppStorage(AppTheme.storageKey) private var themeCode = AppTheme.red;
+    @AppStorage(AppTheme.storageKey) private var themeCode = AppTheme.red.rawValue
+    
+    private var currentTheme: AppTheme { AppTheme.from(themeCode) }
     
     var body: some View {
         NavigationStack {
@@ -26,8 +28,8 @@ struct ProfileView: View {
                     ThemePickerView()
                 }
             }
-            .redHeaderSheet()
-            .redTopBar()
+            .themedHeaderSheet(theme: currentTheme)
+            .themedTopBar(theme: currentTheme)
         }
     }
 }
